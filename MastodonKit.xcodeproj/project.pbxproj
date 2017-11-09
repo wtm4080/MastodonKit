@@ -152,7 +152,6 @@
 		1A5696BC1FB48C3400BC82DC /* MastodonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05109185FBCF1F750313534 /* MastodonKit.framework */; };
 		C0510883C2DF8454F0344A6A /* MastodonKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05103FA0C2807D5BAF11406 /* MastodonKitTests.swift */; };
 		C051089FDEE2F94E9F54575A /* MastodonKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05109185FBCF1F750313534 /* MastodonKit.framework */; };
-		C0510ADAA748D40BB414329B /* ___TARGETNAME in Resources */ = {isa = PBXBuildFile; fileRef = C0510B09EBD10A11DCA2CFF4 /* ___TARGETNAME */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -321,7 +320,6 @@
 		C05103F025D74A1C6ACB0314 /* MastodonKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MastodonKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05103FA0C2807D5BAF11406 /* MastodonKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MastodonKitTests.swift; sourceTree = "<group>"; };
 		C05109185FBCF1F750313534 /* MastodonKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MastodonKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0510B09EBD10A11DCA2CFF4 /* ___TARGETNAME */ = {isa = PBXFileReference; lastKnownFileType = text; path = "___TARGETNAME"; sourceTree = "<group>"; };
 		C0510BAE33CCE81AB607B3A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -560,7 +558,6 @@
 		C051070DFD5050914D2E1C2B /* MastodonKit */ = {
 			isa = PBXGroup;
 			children = (
-				C0510B09EBD10A11DCA2CFF4 /* ___TARGETNAME */,
 				C0510BAE33CCE81AB607B3A4 /* Info.plist */,
 				1A56957F1FB4891000BC82DC /* Client.swift */,
 				1A5695791FB4891000BC82DC /* ClientError.swift */,
@@ -745,7 +742,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0510ADAA748D40BB414329B /* ___TARGETNAME in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
