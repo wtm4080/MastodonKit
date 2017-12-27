@@ -25,6 +25,8 @@ public struct Status {
     public let content: String
     /// The time the status was created.
     public let createdAt: Date
+    /// An array of Emoji.
+    public let emojis: [Emoji]
     /// The number of reblogs for the status.
     public let reblogsCount: Int
     /// The number of favourites for the status.
@@ -90,6 +92,7 @@ extension Status: JSONDictionaryInitializable {
         self.inReplyToAccountID = dictionary["in_reply_to_account_id"] as? Int
         self.content = content
         self.createdAt = createdAt
+        self.emojis = dictionary["emojis"].flatMap(asJSONDictionaries)?.flatMap(Emoji.init) ?? []
         self.reblogsCount = reblogsCount
         self.favouritesCount = favouritesCount
         self.reblogged = dictionary["reblogged"] as? Bool

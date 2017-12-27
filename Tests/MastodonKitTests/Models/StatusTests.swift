@@ -24,6 +24,7 @@ class StatusTests: XCTestCase {
         XCTAssertNil(status?.reblog)
         XCTAssertEqual(status?.content, "This is a very very long status message posted on Mastodon. OK, not that long because I'm lazy and don't want to type a long fixture.")
         XCTAssertEqual(status?.createdAt.timeIntervalSince1970, 1491497702.132)
+        XCTAssertTrue(status?.emojis.isEmpty ?? false)
         XCTAssertEqual(status?.reblogsCount, 0)
         XCTAssertEqual(status?.favouritesCount, 1)
         XCTAssertNil(status?.reblogged)
@@ -64,5 +65,11 @@ class StatusTests: XCTestCase {
         XCTAssertEqual(status?.tags.count, 0)
         XCTAssertNotNil(status?.application)
         XCTAssertEqual(status?.language, "fr")
+
+        let emoji = status?.emojis.first
+
+        XCTAssertEqual(emoji?.shortCode, "apache")
+        XCTAssertEqual(emoji?.staticURL, URL(string: "https://media.knzk.me/custom_emojis/images/000/000/570/static/apache.png"))
+        XCTAssertEqual(emoji?.url, URL(string: "https://media.knzk.me/custom_emojis/images/000/000/570/original/apache.png"))
     }
 }
